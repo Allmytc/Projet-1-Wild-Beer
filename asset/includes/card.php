@@ -1,10 +1,10 @@
-<div class="col-6 col-md-4 col-lg-3 px-1 py-2 ">
+<div class="col-12 col-md-4 col-lg-3 px-1 py-2 ">
   <div class="card p-1">
     <div class="row m-0">
-      <div class="col-sm-12  col-5 px-0 d-flex align-items-center">
+      <div class="col-sm-12   px-0 d-flex align-items-center">
         <img class="card-img-top" src="<?=$biere[1]?>" alt="image de <?=$biere[0]?>">
       </div>
-      <div class="card-body  col-sm-12  col-7 bg-dark text-white">
+      <div class="card-body  col-sm-12  bg-dark text-white">
         <h4 class="card-title  text-center  "><?=$biere[0]?></h4>
         <p class="card-text text-justify"><?=$biere[2]?></p>
         <button type="button" name="button" class="btn btn-warning p-1" data-toggle="modal" data-target="#<?=str_replace(" ", "_",$biere[0])?>">Voir plus...</button>
@@ -34,15 +34,14 @@
          <!-- CORPS DU POP UP  -->
          <div class="container-fluid">
            <div class="row">
-             <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+             <div class="col-lg-4 col-md-4 col-sm-4 col-12 d-none d-lg-block">
                <!--  IMAGE DANS LE POPUP -->
                <img class="card-img-top tom-image" src="<?=$biere[1]?>" alt="image de <?=$biere[0]?>">
              </div>
-             <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+             <div class="col-lg-8 col-md-8 col-sm-8 col-12">
                <div class="row">
                  <table class="table table-borderless table-responsive">
                    <tr>
-                     <td class="align-middle font-weight-bold">Note</td>
                      <td>
                        <table class="table table-bordered">
                          <!-- TABLEAU GOUT/SOIF  -->
@@ -73,11 +72,11 @@
                    </tr>
                  </table>
                </div>
-               <div class="row">
+               <div class="row d-flex justify-content-around">
                  <!-- BOUTON RESEAU SOCIAUX  -->
-                 <button class="btn"><i class="fa fa-twitter"></i></button>
-                 <button class="btn"><i class="fa fa-facebook"></i></button>
-                 <button class="btn"><i class="fa fa-google-plus"></i></button>
+                 <i class="fab fa-twitter"></i>
+                 <i class="fab fa-facebook"></i>
+                 <i class="fab fa-google-plus"></i>
                </div>
              </div>
            </div>
@@ -89,18 +88,18 @@
                  <tr>
                    <td class="font-weight-bold">Unité</td>
                    <td><?=$biere[3]?> €</td>
-                   <td> <button type="button" class="btn btn-warning p-1" name="button">Ajouter au Panier</button> </td>
+                   <td> <button type="button" class="btn btn-warning text-dark p-1" name="button">Ajouter au Panier</button> </td>
                  </tr>
                  <tr>
                    <td class="font-weight-bold">Caisse (x6)</td>
                    <td><?=$biere[9]?> €</td>
-                   <td> <button type="button" class="btn btn-warning p-1" name="button">Ajouter au Panier</button> </td>
+                   <td> <button type="button" class="btn btn-warning text-dark p-1" name="button">Ajouter au Panier</button> </td>
                  </tr>
                  <tr>
                    <td class="font-weight-bold">Fut</td>
                    <td><?=$biere[10]?></td>
                    <?php if ($biere[10] != "NA"): ?>
-                     <td> <button type="button" class="btn btn-warning p-1" name="button">Ajouter au Panier</button> </td>
+                     <td> <button type="button" class="btn btn-warning text-dark p-1" name="button">Ajouter au Panier</button> </td>
                    <?php endif; ?>
                  </tr>
                </table>
