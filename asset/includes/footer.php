@@ -46,11 +46,11 @@
         <button type="submit" name="button" class="btn btn-warning text-dark">Envoyer</button>
       </form>
     </div>
-    <div class="col-lg-3"><br>
+    <div class="col-lg-3 text-center"><br>
       <h4>Wild bazar</h4>
       <p>1 Rue de la paix<br>75 001 CEDEX<br>SAV 56 78<br>Recrutement<br>A propos de WildBeer</p>
     </div>
-    <div class="col-lg-2"><br>
+    <div class="col-lg-2  text-center"><br>
       <h4>Partenaires</h4><br>
       <a href="https://urlz.fr/96tG">
         <p>Wild Code School</p>
@@ -64,9 +64,9 @@
     </div>
   </div>
   <hr style="background-color: white;">
-  <div class="row mx-auto">
+  <div class="row mx-auto  text-center">
     <div class="col-lg-3 col-12">
-      <i class="fab fa-fedex fa-2x" style="color: white;"></i>
+      <i class="fab fa-fedex fa-2x"></i>
       <h4 class="font-weight-bold text-warning policefooter">Expedition rapide</h4>
       <p>Emballage anti-casse envoyés sous 24h</p>
     </div>
@@ -76,25 +76,25 @@
       <p>Nos client nous adorent et nous leur rendons bien</p>
     </div>
     <div class="col-lg-3 col-12">
-      <i class="fab fa-untappd fa-2x" style="color: white;"></i>
+      <i class="fab fa-untappd fa-2x"></i>
       <h4 class="font-weight-bold text-warning policefooter">Logo dans le thème</h4>
       <p>...</p>
     </div>
     <div class="col-lg-3 col-12">
-      <i class="fab fa-dev fa-2x" style="color: white;"></i>
+      <i class="fab fa-dev fa-2x"></i>
       <h4 class="font-weight-bold text-warning policefooter">Tu devras</h4>
       <p>N'est ce pas ?</p>
     </div>
   </div>
   <div class="row justify-content-center iconefooter">
     <div class="col-lg-2 col-4">
-      <i class="fab fa-cc-mastercard fa-2x" style="color: white;"></i>
+      <i class="fab fa-cc-mastercard fa-2x"></i>
     </div>
     <div class="col-lg-2 col-4">
-      <i class="fab fa-paypal fa-2x" style="color: white;"></i>
+      <i class="fab fa-paypal fa-2x"></i>
     </div>
     <div class="col-lg-2 col-4">
-      <i class="fab fa-cc-visa fa-2x" style="color: white;"></i>
+      <i class="fab fa-cc-visa fa-2x"></i>
     </div>
   </div>
   <div class="row justify-content-center">
