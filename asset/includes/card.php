@@ -2,14 +2,12 @@
   <div class="card p-1">
     <div class="row m-0">
       <div class="col-sm-12  col-5 px-0 d-flex align-items-center">
-        <img class="card-img-top " data-toggle="modal" data-target="#<?=str_replace(" ", "_",$biere[0])?>" src="<?=$biere[1]?>" alt="image de <?=$biere[0]?>">
+        <img class="card-img-top" src="<?=$biere[1]?>" alt="image de <?=$biere[0]?>">
       </div>
       <div class="card-body  col-sm-12  col-7 bg-dark text-white">
         <h4 class="card-title  text-center  "><?=$biere[0]?></h4>
         <p class="card-text text-justify"><?=$biere[2]?></p>
-
-        <p class="text-success font-weight-bold text-center"><?=$biere[3]?> €</p>
-        <button type="button" name="button" class="btn btn-warning btn-block  p-1"> Ajouter au Panier !</button>
+        <button type="button" name="button" class="btn btn-warning p-1" data-toggle="modal" data-target="#<?=str_replace(" ", "_",$biere[0])?>">Voir plus...</button>
       </div>
     </div>
   </div>
@@ -91,14 +89,19 @@
                  <tr>
                    <td class="font-weight-bold">Unité</td>
                    <td><?=$biere[3]?> €</td>
+                   <td> <button type="button" class="btn btn-warning p-1" name="button">Ajouter au Panier</button> </td>
                  </tr>
                  <tr>
                    <td class="font-weight-bold">Caisse (x6)</td>
                    <td><?=$biere[9]?> €</td>
+                   <td> <button type="button" class="btn btn-warning p-1" name="button">Ajouter au Panier</button> </td>
                  </tr>
                  <tr>
                    <td class="font-weight-bold">Fut</td>
                    <td><?=$biere[10]?></td>
+                   <?php if ($biere[10] != "NA"): ?>
+                     <td> <button type="button" class="btn btn-warning p-1" name="button">Ajouter au Panier</button> </td>
+                   <?php endif; ?>
                  </tr>
                </table>
              </div>
