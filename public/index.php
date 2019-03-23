@@ -15,7 +15,7 @@
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
       <div class="view">
-        <img class="d-block w-100" src="img/mainCaroussel/picon.jpg" alt="First slide">
+        <img class="d-block w-100" src="img/mainCaroussel/biere1.jpg" alt="First slide">
         <div class="mask rgba-black-light"></div>
       </div>
       <div class="carousel-caption">
@@ -26,7 +26,7 @@
     <div class="carousel-item">
       <!--Mask color-->
       <div class="view">
-        <img class="d-block w-100" src="img/mainCaroussel/monde.jpg" alt="Second slide">
+        <img class="d-block w-100" src="img/mainCaroussel/biere2.jpg" alt="Second slide">
         <div class="mask rgba-black-strong"></div>
       </div>
       <div class="carousel-caption">
@@ -37,7 +37,7 @@
     <div class="carousel-item">
       <!--Mask color-->
       <div class="view">
-        <img class="d-block w-100" src="img/mainCaroussel/coffret.jpg" alt="Third slide">
+        <img class="d-block w-100" src="img/mainCaroussel/biere3.jpg" alt="Third slide">
         <div class="mask rgba-black-slight"></div>
       </div>
       <div class="carousel-caption">
@@ -104,6 +104,8 @@
     </div>
   </section>
 </div>
+<br>
+
 <!--PARTIE OU QUENTIN CASSE ENCORE LES BURNES-->
 
 
