@@ -122,6 +122,8 @@
 <script type="text/javascript" src="../../public/js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="../../public/js/mdb.js"></script>
+<script type="text/javascript" src="../../public/js/button.js"></script>
+
 </body>
 
 </html>
