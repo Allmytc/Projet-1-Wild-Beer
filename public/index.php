@@ -60,84 +60,17 @@
 </div>
 </section>
 
-
+<?php $myCategories = array_map('str_getcsv', file('../asset/datas/categories.csv'));?>
 
 <div class="container">
   <section id="categories">
     <h3>Les bières du monde entier à votre porte en 48h !</h3>
     <div class="row d-flex justify-content-around align-self-center">
-      <div class="col-sm-6 col-lg-4 mb-2">
-        <!--asia category -->
-        <a href="cat/asia.php">
-        <div class="card">
-          <img src="img/catBackground/AsiaBackground.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay ">
-            <h4 class="card-title text-center jmCatTitle">Asie</h4>
-            <img src="img/flags/asia_flag.png" class="catFlagImg" alt="asia flag">
-            <p class="card-text ">Préparez vous à déguster des blondes légères, rafraîchissantes et bon marché.</p>
-          </div>
-        </div></a>
-      </div>
-      <!--belgium category -->
-      <div class="col-sm-6 col-lg-4 mb-2">
-         <a href="cat/belgium.php">
-        <div class="card  ">
-          <img src="img/catBackground/BelgiqueBackground.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay ">
-            <h4 class="card-title text-center jmCatTitle">Belgique</h4>
-            <img src="img/flags/belgium_flag.png" class="catFlagImg" alt="belgium flag">
-            <p class="card-text "> Les bières belges comptent parmi les plus variées et les plus nombreuses collections de bières dans le monde.</p>
-          </div>
-        </div></a>
-      </div>
-      <!--germany category -->
-      <div class="col-sm-6 col-lg-4 mb-2">
-        <a href="cat/germany.php">
-        <div class="card mb-2 ">
-          <img src="img/catBackground/germanyBackground.png" class="card-img" alt="...">
-          <div class="card-img-overlay ">
-            <h4 class="card-title text-center jmCatTitle">Allemagne</h4>
-            <img src="img/flags/germany.png" class="catFlagImg" alt="germany flag">
-            <p class="card-text ">Depuis des siècles, la bière fait partie de la culture et de la gastronomie allemande</p>
-          </div>
-        </div></a>
-      </div>
-      <!--south america category -->
-      <div class="col-sm-6 col-lg-4 mb-2">
-        <a href="cat/southAmerica.php">
-        <div class="card mb-2 ">
-          <img src="img/catBackground/southAmericaBackground.png" class="card-img" alt="...">
-          <div class="card-img-overlay ">
-            <h4 class="card-title text-center jmCatTitle">Amerique du Sud</h4>
-            <img src="img/flags/south_america_flag.png" class="catFlagImg" alt="South America flag">
-            <p class="card-text ">Plein des bières carnavalesques!!</p>
-          </div>
-        </div></a>
-      </div>
-      <!--france category -->
-      <div class="col-sm-6 col-lg-4 mb-2">
-        <a href="cat/france.html">
-        <div class="card mb-2 ">
-          <img src="img/catBackground/franceBackground.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay ">
-            <h4 class="card-title text-center jmCatTitle">France</h4>
-            <img src="img/flags/france_flag.png" class="catFlagImg" alt="france flag">
-            <p class="card-text ">Plein des bières cocorico!!</p>
-          </div>
-        </div></a>
-      </div>
-      <!--UK category -->
-      <div class="col-sm-6 col-lg-4 mb-2">
-        <a href="cat/uk.html">
-        <div class="card mb-2 ">
-          <img src="img/catBackground/UkBackground.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay ">
-            <h4 class="card-title text-center jmCatTitle">Grande Bretagne</h4>
-            <img src="img/flags/UK_flag.png" class="catFlagImg" alt="United Kingdom flag">
-            <p class="card-text ">La bière britannique a une tradition fort ancienne et présente un vaste échantillon de types authentiques issus de la fermentation haute.</p>
-          </div>
-        </div></a>
-      </div>
+
+      <?php foreach ($myCategories as $category){
+        include('../asset/includes/indexCategories.php');
+      }?>
+
     </div>
   </section>
 </div>
