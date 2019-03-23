@@ -3,7 +3,7 @@
 
 <div class="col-sm-6 col-lg-4 mb-2">
   <!--asia category -->
-  <a href="<?= $category[O] ?>">
+  <a href="<?= $category[0] ?>">
     <div class="card">
       <img src="<?= $category[1] ?>" class="card-img" alt="image représentant <?= $category[2] ?>">
       <div class="card-img-overlay ">

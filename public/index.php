@@ -20,7 +20,7 @@
       </div>
       <div class="carousel-caption">
         <h3 class="h3-responsive">Notre Best-Seller</h3>
-        <p>Le Picon c'est la vie !</p>
+        <a  class="tom-picon-link"href="https://www.contrepoints.org/2018/08/06/269760-petite-histoire-picon">Le Picon c'est la vie !</a>
       </div>
     </div>
     <div class="carousel-item">
@@ -64,14 +64,14 @@
 
 <div class="container">
   <section id="categories">
-    <h3>Les bières du monde entier à votre porte en 48h !</h3>
+    <h3 class="text-center">Les bières du monde entier à votre porte en 48h !</h3><br>
     <div class="row d-flex justify-content-around align-self-center">
 
       <?php foreach ($myCategories as $category){
         include('../asset/includes/indexCategories.php');
       }?>
 
-    </div>
+    </div><br>
   </section>
 </div>
 

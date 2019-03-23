@@ -220,6 +220,16 @@ filter : grayscale(50%);
     color: white;
 }
 
+.tom-picon-link{
+    color:white;
+}
+.tom-picon-link:hover{
+    color:white; !important
+}
+.tom-picon-link:visited{
+    color: white;
+}
+
 
 /*CSS CATEGORIES JEAN MICHEL */
 
