@@ -1,8 +1,6 @@
-<?php
-  include('../asset/includes/headerAdmin.php');
- ?>
+<?php include('../asset/includes/headerAdmin.php');
 
-<?php
+
 $errors =[];
 
 if (!empty($_POST)){
