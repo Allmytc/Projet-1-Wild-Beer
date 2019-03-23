@@ -1,9 +1,9 @@
-BeerLao,../../public/img/beers/asia/lao.jpg,Brassée avec un unique riz lao blanchi et eau fraîche naturelle du Laos.,1.80,3,1.5,2,5,Basse,9.80,NA,Laos
-Asahi,../../public/img/beers/asia/asahi.jpg,La bière blonde la plus vendue au Japon...et dans les restaurants de sushis!,2.60,5,1.5,2,5,Haute,14.00,NA,Japon
-Tiger,../../public/img/beers/asia/tiger.jpg,Une bière blonde premium brassée : malt australien et houblon allemand.,2.55,2,2,1,5.1,Basse,15.00,NA,Singapour
-Tsingtao,../../public/img/beers/asia/tsingtao.jpg,La bière chinoise rafraîchissante la plus connue et répandue !,2.60,2,1,1.5,5,Basse,14.50,NA,Chine
-Snow,../../public/img/beers/asia/snow.jpg,Une bière lager originaire de Chine avec fermentation basse.,1.85,3.5,2,0.5,3.5,Basse,10.10,NA,Chine
-Singha,../../public/img/beers/asia/singha.jpg,Une bière premium thailandaise empreinte d’exotisme et d’élégance.,1.55,3,1.5,1.5,5,Haute,9.00,NA,Thaïlande
-Cambodia,../../public/img/beers/asia/cambodia.jpg,Elle porte le nom de sa patrie. La bière la plus consommé au Cambodge!,2.00,2,0.5,2,5,Basse,11.00,NA,Cambodge
-Angkor,../../public/img/beers/asia/angkor.jpg,Une bière blonde type pils brassée au Cambodge. Douce et légère.,1.55,4,2,1.5,5,Basse,8.60,NA,Cambodge
-Saigon,../../public/img/beers/asia/saigon.jpg,Pils vietnamienne légère et désaltérante brassée avec du malt et du riz.,2.10,3,1.5,1.5,4.9,Basse,11.60,NA,Vietnam
+BeerLao,../../public/img/beers/asia/lao.jpg,Brassée avec un unique riz lao blanchi et eau fraîche naturelle du Laos.,1.80,3,1.5,2,5,Basse,9.80,NA,Laos,asia
+Asahi,../../public/img/beers/asia/asahi.jpg,La bière blonde la plus vendue au Japon...et dans les restaurants de sushis!,2.60,5,1.5,2,5,Haute,14.00,NA,Japon,asia
+Tiger,../../public/img/beers/asia/tiger.jpg,Une bière blonde premium brassée : malt australien et houblon allemand.,2.55,2,2,1,5.1,Basse,15.00,NA,Singapour,asia
+Tsingtao,../../public/img/beers/asia/tsingtao.jpg,La bière chinoise rafraîchissante la plus connue et répandue !,2.60,2,1,1.5,5,Basse,14.50,NA,Chine,asia
+Snow,../../public/img/beers/asia/snow.jpg,Une bière lager originaire de Chine avec fermentation basse.,1.85,3.5,2,0.5,3.5,Basse,10.10,NA,Chine,asia
+Singha,../../public/img/beers/asia/singha.jpg,Une bière premium thailandaise empreinte d’exotisme et d’élégance.,1.55,3,1.5,1.5,5,Haute,9.00,NA,Thaïlande,asia
+Cambodia,../../public/img/beers/asia/cambodia.jpg,Elle porte le nom de sa patrie. La bière la plus consommé au Cambodge!,2.00,2,0.5,2,5,Basse,11.00,NA,Cambodge,asia
+Angkor,../../public/img/beers/asia/angkor.jpg,Une bière blonde type pils brassée au Cambodge. Douce et légère.,1.55,4,2,1.5,5,Basse,8.60,NA,Cambodge,asia
+Saigon,../../public/img/beers/asia/saigon.jpg,Pils vietnamienne légère et désaltérante brassée avec du malt et du riz.,2.10,3,1.5,1.5,4.9,Basse,11.60,NA,Vietnam,asia
