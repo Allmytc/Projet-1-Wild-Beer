@@ -1,13 +1,9 @@
-<div class="container d-flex justify-content-center">
-  <a href="../../admin/form.php"><button type="button" class="btn btn-elegant"name="button">Ajouter un produit</button></a>
-</div>
-
 <div class="container-fluid bg-dark text-light">
-  <div class="row back-footer text-dark text-center">
+  <div class="row justify-content-center back-footer text-center text-dark">
     <div class="col-lg-6 col-12">
       <div class="row p-2">
         <div class="col-lg-4 col-12">
-          <p class="font-weight-bold">REJOIGNER NOUS SUR:</p>
+          <p class="font-weight-bold text-dark">REJOIGNER NOUS SUR:</p>
         </div>
         <div class="col-1 offset-1">
           <i class="fab fa-facebook-f fa-2x"></i>
@@ -36,7 +32,7 @@
   </div>
   <div class="row">
     <div class="col-lg-3 text-center"><br>
-      <a href="../index.php"><img class="img-fluid logofooter" alt="Logo Wild Beer" src="../img/logo/iconeshop.png"></a>
+      <a href="../public/index.php"><img class="img-fluid logofooter" alt="Logo Wild Beer" src="../public/img/logo/iconeshop.png"></a>
       <br><br><br>
       <p>1O euros Offert sur votre premier achat !</p>
     </div>
@@ -51,7 +47,7 @@
       </form>
     </div>
     <div class="col-lg-3 text-center"><br>
-      <h4>Wild bazar
+      <h4>Wild bazar</h4>
       <p>1 Rue de la paix<br>75 001 CEDEX<br>SAV 56 78<br>Recrutement<br>A propos de WildBeer</p>
     </div>
     <div class="col-lg-2  text-center"><br>
@@ -101,15 +97,17 @@
       <i class="fab fa-cc-visa fa-2x"></i>
     </div>
   </div>
-  <div class="row">
+  <div class="row justify-content-center">
     <div class="col-12">
-      <p class="taillepolicefooter">L'ABUS D'ALCOOL EST DANGEROUS POUR LA SANTÉ.</p>
+      <p class="taillepolicefooter  ">(L'ABUS D'ALCOOL EST DANGEROUS POUR LA SANTÉ.)</p>
     </div>
   </div>
 
 </div>
 
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button><!-- SCRIPTS -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<!-- SCRIPTS -->
 <!-- JQuery -->
 <script type="text/javascript" src="../../public/js/jquery-3.3.1.min.js"></script>
 <!-- Bootstrap tooltips -->
@@ -119,6 +117,7 @@
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="../../public/js/mdb.js"></script>
 <script type="text/javascript" src="../../public/js/button.js"></script>
+
 </body>
 
 </html>
