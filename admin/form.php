@@ -103,35 +103,34 @@ if (!empty($_POST)){
 
   <div class="form-group">
     <label for="beerName">Nom de la bière</label>
-    <input type="text" name="beerName"  id="beerName" class="form-control" required value = "<?= htmlentities($_POST['beerName']) ?>">
+    <input type="text" name="beerName"  id="beerName" class="form-control" required value = "<?php if(!empty($_POST)){echo(htmlentities($_POST['beerName']));} ?>">
   </div>
 
   <div class="form-group">
     <label for="beerImg">Image</label>
-    <input type="text" name="beerImg" id="beerImg" class="form-control" required value="<?= htmlentities($_POST['beerImg']) ?>">
+    <input type="text" name="beerImg" id="beerImg" class="form-control" required value="<?php if(!empty($_POST)){echo(htmlentities($_POST['beerImg']));}?>">
   </div>
 
   <div class="form-group">
     <label for="beerDescription">Description</label>
-    <textarea name="beerDescription" rows="4" cols="80" id="beerDescription" class="form-control" required><?= htmlentities($_POST['beerDescription']) ?></textarea>
   </div>
 
   <div class="form-row">
     <div class="form-group col-md-3">
       <label for="noteGout">Note Gout</label>
-      <input name="noteGout" type="number" step="0.1" min="0" class="form-control" id="noteGout" placeholder="/5" required value="<?= htmlentities($_POST['noteGout']) ?>">
+      <input name="noteGout" type="number" step="0.1" min="0" class="form-control" id="noteGout" placeholder="/5" required value="<?php if(!empty($_POST)){echo(htmlentities($_POST['noteGout']));} ?>">
     </div>
     <div class="form-group col-md-3">
       <label for="noteSoif">Note Soif</label>
-      <input name="noteSoif" type="number" step="0.1" min="0" class="form-control" id="noteSoif" placeholder="/2" required value="<?= htmlentities($_POST['noteSoif']) ?>">
+      <input name="noteSoif" type="number" step="0.1" min="0" class="form-control" id="noteSoif" placeholder="/2" required value="<?php if(!empty($_POST)){echo(htmlentities($_POST['noteSoif']));} ?>">
     </div>
     <div class="form-group col-md-3">
       <label for="noteAmertume">Note Amertume</label>
-      <input name="noteAmertume" type="number" step="0.1" min="0" class="form-control" id="noteAmertume" placeholder="/2" required value="<?= htmlentities($_POST['noteAmertume']) ?>">
+      <input name="noteAmertume" type="number" step="0.1" min="0" class="form-control" id="noteAmertume" placeholder="/2" required value="<?php if(!empty($_POST)){echo(htmlentities($_POST['noteAmertume']));} ?>">
     </div>
     <div class="form-group col-md-3">
       <label for="alcool">% Alcool</label>
-      <input name="alcool" type="number" step="0.1" min="0" class="form-control" id="alcool" placeholder="%" required value="<?= htmlentities($_POST['alcool']) ?>">
+      <input name="alcool" type="number" step="0.1" min="0" class="form-control" id="alcool" placeholder="%" required value="<?php if(!empty($_POST)){echo(htmlentities($_POST['alcool']));} ?>">
     </div>
   </div>
 
@@ -145,7 +144,7 @@ if (!empty($_POST)){
     </div>
     <div class="form-group col-md-4">
       <label for="pays">Pays</label>
-      <input name="pays" type="text" class="form-control" id="pays" required value="<?= htmlentities($_POST['pays']) ?>">
+      <input name="pays" type="text" class="form-control" id="pays" required value="<?php if(!empty($_POST)){echo(htmlentities($_POST['pays']));} ?>">
     </div>
     <div class="form-group col-md-4">
       <label for="category">Categorie</label>
@@ -163,15 +162,15 @@ if (!empty($_POST)){
   <div class="form-row">
     <div class="form-group col-md-4">
       <label for="prixUnitaire">Prix Unitaire</label>
-      <input name="prixUnitaire" type="number" step="0.1" min="0" class="form-control" id="prixUnitaire" placeholder="€" required value="<?= htmlentities($_POST['prixUnitaire']) ?>">
+      <input name="prixUnitaire" type="number" step="0.1" min="0" class="form-control" id="prixUnitaire" placeholder="€" required value="<?php if(!empty($_POST)){echo(htmlentities($_POST['prixUnitaire']));} ?>">
     </div>
     <div class="form-group col-md-4">
       <label for="prixCaisse">Prix Caisse</label>
-      <input name="prixCaisse" type="number" step="0.1" min="0" class="form-control" id="prixCaisse" placeholder="€" required value="<?= htmlentities($_POST['prixCaisse']) ?>">
+      <input name="prixCaisse" type="number" step="0.1" min="0" class="form-control" id="prixCaisse" placeholder="€" required value="<?php if(!empty($_POST)){echo(htmlentities($_POST['prixCaisse']));} ?>">
     </div>
     <div class="form-group col-md-4">
       <label for="prixFut">Prix Fut</label>
-      <input name="prixFut" type="text" class="form-control" id="prixFut" placeholder="NA" required value="<?= htmlentities($_POST['prixFut']) ?>">
+      <input name="prixFut" type="text" class="form-control" id="prixFut" placeholder="NA" required value="<?php if(!empty($_POST)){echo(htmlentities($_POST['prixFut']));} ?>">
     </div>
   </div>
   <div class="d-flex justify-content-center">
