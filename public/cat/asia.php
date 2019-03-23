@@ -1,12 +1,11 @@
 <?php
   include('../../asset/includes/headerCat.php');
-  include('asia/description.php') 
+  include('asia/description.php')
 ?>
-
 
  <?php $myBeers = array_map('str_getcsv', file('../../asset/datas/asia.csv'));?>
 
-
+<?php include('../../asset/includes/topVenteCat.php') ?>
 
 <div class="container">
   <section id="nosProduits">
