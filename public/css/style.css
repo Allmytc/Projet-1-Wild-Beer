@@ -34,81 +34,17 @@ a {
 
 /*CSS NAVBAR THOMAS*/
 
-
-
-.tom-white-text {
-    color: #fff;
+.tom-card-desc {
+    color: #BFB8A4;
 }
 
-@font-face {
-  font-family: caviar;
-  src: url(asset\fonts\thomas\CaviarDreams.ttf);
-}
-
-.tom-caviar{
-  font-family: caviar; !important
-}
-
-.tom-btn {
-    float: left;
-}
-.tom-bg{
-  background-color:   #f9e79f  ;
-}
-.tom-image{
-  padding: 5px;
-
-}
-.tom-cat-title{
-  color : #4F575E;
-}
-.tom-card-bg{
-  background-color: #1A1F24;
-}
-.tom-btn-bg{
-  background-color: #FFFCF1;
-  color: #1A1F24;
-}
-.tom-card-text{
-  color: #BFB8A4;
-}
-.tom-card-desc{
-  color: #BFB8A4;
-}
-.tom-hr{
-  background-color: #BFB8A4;
-}
-.tom-footer-title{
-  color: #f9b233;
-}
-.tom-desc-size{
-  font-size: 24px;
-}
-.tom-page-bg{
-  background-color: #FFFCF1;
-}
-.tom-jumbotron{
-filter :opacity(40%);
-filter : grayscale(50%);
-
-}
-
-.tom-card-border{
-  background-color: #383426;
-}
 .tom-nav-bg{
   background-color: #121B25;
 }
 
-
-
 .tom-icon {
     width: 10%;
     height: auto;
-}
-
-.tom-gradient {
-    background-image: linear-gradient(black, red, yellow);
 }
 
 @media only screen and (max-width: 800px) {
@@ -124,14 +60,7 @@ filter : grayscale(50%);
 
 /*CSS CAROUSSEL KEVIN*/
 
-.img-opacity {
-    opacity: 0.65;
-}
 
-.k-logo {
-    margin-right: .5rem;
-    height: 2.5rem;
-}
 
 .kev-carousel-item {
     width: 100%;
