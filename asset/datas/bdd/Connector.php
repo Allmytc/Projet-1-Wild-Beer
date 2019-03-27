@@ -33,7 +33,7 @@ class Connector
         try {
             $sql = "SELECT name, path, description, unitPrice, taste, thirsty, bitterness, alcohol, "
             ." fermentation, sixPackPrice, kegPrice, country, cat FROM categorie WHERE cat LIKE :cat";
-            $prep = $this->conn->prepare($sql);
+            $prep = $this->getConn()->prepare($sql);
             $prep->bindValue(':cat','%'. $cat . '%', PDO::PARAM_STR);
             $prep->execute();
             $myArray = $prep->fetchAll();
@@ -42,6 +42,43 @@ class Connector
         }
 
         return $myArray;
+    }
+
+    public function addBeer($biere)
+    {
+        $sql = "INSERT INTO categorie (name, path, description, unitPrice, taste, thirsty, bitterness,"
+            . "alcohol,  fermentation, sixPackPrice, kegPrice, country, cat) VALUES (:name, :path, :desc, :unitPrice,"
+            . ":taste, :thirsty, :bitterness, :alcohol, :fermentation, :sixPackPrice, :kegPrice, :country, :cat)";
+        try{
+            $prep = $this->getConn()->prepare($sql);
+
+            /*
+            foreach ($biere as $key => $col) {
+                $template = "':$key'";
+                $prep->bindValue($template, $col, PDO::PARAM_STR);
+            }
+            */
+
+
+            $prep->bindValue(':name', $biere['name'], PDO::PARAM_STR);
+            $prep->bindValue(':path', $biere['path'], PDO::PARAM_STR);
+            $prep->bindValue(':desc', $biere['desc'], PDO::PARAM_STR);
+            $prep->bindValue(':unitPrice', $biere['unitPrice'], PDO::PARAM_STR);
+            $prep->bindValue(':taste', $biere['taste'], PDO::PARAM_STR);
+            $prep->bindValue(':thirsty', $biere['thirsty'], PDO::PARAM_STR);
+            $prep->bindValue(':bitterness', $biere['bitterness'], PDO::PARAM_STR);
+            $prep->bindValue(':alcohol', $biere['alcohol'], PDO::PARAM_STR);
+            $prep->bindValue('fermentation', $biere['fermentation'], PDO::PARAM_STR);
+            $prep->bindValue(':sixPackPrice', $biere['sixPackPrice'], PDO::PARAM_STR);
+            $prep->bindValue(':kegPrice', $biere['kegPrice'], PDO::PARAM_STR);
+            $prep->bindValue(':country', $biere['country'], PDO::PARAM_STR);
+            $prep->bindValue(':cat', $biere['cat'], PDO::PARAM_STR);
+            // not done at all no error but no insert either.
+            $prep->execute();
+            return $prep->fetchAll();
+        }catch (PDOException $e){
+            return $e;
+        }
     }
 
 

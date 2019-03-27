@@ -1,6 +1,6 @@
 <?php include('../asset/includes/headerAdmin.php');
 
-
+require('../asset/datas/bdd/Connector.php');
 $errors =[];
 
 if (!empty($_POST)){
@@ -109,7 +109,9 @@ if (!empty($_POST)){
         'country' => $_POST['pays'],
         'cat' => $_POST['category']
       ];
-    print_r($formArr);
+    $conn = new Connector();
+    $conn->addBeer($formArr);
+
   }
 ?>
 
