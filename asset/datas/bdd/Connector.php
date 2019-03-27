@@ -1,6 +1,7 @@
 <?php
 //php 7.3.0
 
+require('dbinfo.php');
 
 class Connector
 {
@@ -14,14 +15,10 @@ class Connector
 
     private $conn;
 
-    private $db = "PWB1";
-    private $server = '127.0.0.1';
-    private $user = 'root';
-    private $password = '';
 
     public function __construct()
     {
-        $this->conn = $this->buildConnector($this->server, $this->db, $this->user, $this->password);
+        $this->conn = $this->buildConnector(SERVER, DB, USER, PASS);
     }
 
 
