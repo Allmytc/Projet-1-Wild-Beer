@@ -60,7 +60,9 @@ a {
 
 /*CSS CAROUSSEL KEVIN*/
 
-
+.tom-min-height{
+    min-height: 125px;
+}
 
 .kev-carousel-item {
     width: 100%;

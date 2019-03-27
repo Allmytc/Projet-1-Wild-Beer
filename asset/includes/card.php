@@ -5,8 +5,8 @@
         <img class="card-img-top" src="<?=$biere[1]?>" alt="image de <?=$biere[0]?>">
       </div>
       <div class="card-body  col-sm-12  bg-dark text-white">
-        <h4 class="card-title  text-center  "><?=$biere[0]?></h4>
-        <p class="card-text text-justify"><?=$biere[2]?></p>
+        <h4 class="card-title  text-center  "><?=utf8_encode($biere[0])?></h4>
+        <p class="card-text text-justify tom-min-height"><?=utf8_encode($biere[2])?></p>
         <button type="button" name="button" class="btn btn-warning p-1" data-toggle="modal" data-target="#<?=str_replace(" ", "_",$biere[0])?>">Voir plus...</button>
       </div>
     </div>
@@ -36,7 +36,7 @@
            <div class="row">
              <div class="col-lg-4 col-md-4 col-sm-4 col-12 d-none d-lg-block">
                <!--  IMAGE DANS LE POPUP -->
-               <img class="card-img-top tom-image" src="<?=$biere[1]?>" alt="image de <?=$biere[0]?>">
+               <img class="card-img-top tom-image" src="<?=$biere[1]?>" alt="image de <?=utf8_encode($biere[0])?>">
              </div>
              <div class="col-lg-8 col-md-8 col-sm-8 col-12">
                <div class="row">
@@ -51,24 +51,24 @@
                            <td>Amertume</td>
                          </tr>
                          <tr>
-                           <td><?=$biere[4]?>/5</td>
-                           <td><?=$biere[5]?>/2</td>
-                           <td><?=$biere[6]?>/2</td>
+                           <td><?=utf8_encode($biere[4])?>/5</td>
+                           <td><?=utf8_encode($biere[5])?>/2</td>
+                           <td><?=utf8_encode($biere[6])?>/2</td>
                          </tr>
                        </table>
                      </td>
                    </tr>
                    <tr>
                      <td class="font-weight-bold">Alcool/volume</td>
-                     <td><?=$biere[7]?>%</td>
+                     <td><?=utf8_encode($biere[7])?>%</td>
                    </tr>
                    <tr>
                      <td class="font-weight-bold">fermentation</td>
-                     <td><?=$biere[8]?></td>
+                     <td><?=utf8_encode($biere[8])?></td>
                    </tr>
                    <tr>
                      <td class="font-weight-bold">Pays</td>
-                     <td><?=$biere[11]?></td>
+                     <td><?=utf8_encode($biere[11])?></td>
                    </tr>
                  </table>
                </div>
@@ -87,17 +87,17 @@
                  <!--TABLEAU PRIX   -->
                  <tr>
                    <td class="font-weight-bold">Unité</td>
-                   <td><?=$biere[3]?> €</td>
+                   <td><?=utf8_encode($biere[3])?> €</td>
                    <td> <button type="button" class="btn btn-warning text-dark p-1" name="button">Ajouter au Panier</button> </td>
                  </tr>
                  <tr>
                    <td class="font-weight-bold">Caisse (x6)</td>
-                   <td><?=$biere[9]?> €</td>
+                   <td><?=utf8_encode($biere[9])?> €</td>
                    <td> <button type="button" class="btn btn-warning text-dark p-1" name="button">Ajouter au Panier</button> </td>
                  </tr>
                  <tr>
                    <td class="font-weight-bold">Fut</td>
-                   <td><?=$biere[10]?></td>
+                   <td><?=utf8_encode($biere[10])?></td>
                    <?php if ($biere[10] != "NA"): ?>
                      <td> <button type="button" class="btn btn-warning text-dark p-1" name="button">Ajouter au Panier</button> </td>
                    <?php endif; ?>

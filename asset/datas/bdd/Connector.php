@@ -18,26 +18,29 @@ class Connector
 
     public function __construct()
     {
-        $this->conn = $this->buildConnector(SERVER, DB, USER, PASS);
+        $this->setConn($this->buildConnector(SERVER, BD, USER, PASS));
     }
 
 
     public function buildConnector($srv, $db, $usr, $pass)
     {
-        //Create the mysql connection that is used to query the database
-        if (mysqli_connect_errno()) die("Could not connect to the database " . $db . " : ") . mysqli_connect_error();
-        else return mysqli_connect($srv, $usr, $pass, $db);
+        return new PDO("mysql:host=".$srv.";dbname=".$db, $usr, $pass);
     }
 
     public function selectCat($cat)
     {
         //query the db on passed categorie
-        $myArray = Array();
-        $sql = "SELECT * FROM categorie WHERE cat LIKE '%" . $cat . "%'";
-        $data = mysqli_query($this->conn, $sql);
-        while ($row = $data->fetch_assoc()) {
-            array_push($myArray, $row);
+        try {
+            $sql = "SELECT name, path, description, unitPrice, taste, thirsty, bitterness, alcohol, "
+            ." fermentation, sixPackPrice, kegPrice, country, cat FROM categorie WHERE cat LIKE :cat";
+            $prep = $this->conn->prepare($sql);
+            $prep->bindValue(':cat','%'. $cat . '%', PDO::PARAM_STR);
+            $prep->execute();
+            $myArray = $prep->fetchAll();
+        }catch(PDOException $e){
+            return $e;
         }
+
         return $myArray;
     }
 
@@ -47,6 +50,22 @@ class Connector
         //close the db connection
         $this->conn->close();
         return "Connection has been closed.";
+    }
+
+    /**
+     * @return PDO
+     */
+    public function getConn()
+    {
+        return $this->conn;
+    }
+
+    /**
+     * @param PDO $conn
+     */
+    public function setConn($conn)
+    {
+        $this->conn = $conn;
     }
 
 }

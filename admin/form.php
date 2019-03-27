@@ -15,9 +15,9 @@ if (!empty($_POST)){
     $errors['beerImg'] = "L'image n'est pas correct";
   }
   #VERIFICATION DESCRIPTION
-  if (empty($_POST['beerDescription'])) {
+  if (empty($_POST['description'])) {
     $errors['beerDescription'] = "La description est vide";
-  }elseif (!preg_match("/[a-zA-Z0-9]/", $_POST['beerDescription'])) {
+  }elseif (!preg_match("/[a-zA-Z0-9]/", $_POST['description'])) {
     $errors['beerDescription'] = "La description de la bière n'est pas correct";
   }
     #VERIFICATION Note GOUT
@@ -93,7 +93,23 @@ if (!empty($_POST)){
     }
     echo '</div>';
   }elseif (!empty($_POST) && empty($errors)) {
-    header("Location: ../south_america.php");
+   // header("Location: ../south_america.php");
+    $formArr = [
+        'name' =>  $_POST['beerName'],
+        'path' => $_POST['beerImg'],
+        'desc' => $_POST['description'],
+        'unitPrice' => $_POST['prixUnitaire'],
+        'taste' => $_POST['noteGout'],
+        'thirsty' => $_POST['noteSoif'],
+        'bitterness' => $_POST['noteAmertume'],
+        'alcohol' => $_POST['alcool'],
+        'fermentation' => $_POST['fermentation'],
+        'sixPackPrice' => $_POST['prixCaisse'],
+        'kegPrice' => $_POST['prixFut'],
+        'country' => $_POST['pays'],
+        'cat' => $_POST['category']
+      ];
+    print_r($formArr);
   }
 ?>
 
@@ -109,9 +125,10 @@ if (!empty($_POST)){
     <input type="text" name="beerImg" id="beerImg" class="form-control" required value="<?php if(!empty($_POST)){echo(htmlentities($_POST['beerImg']));}?>">
   </div>
 
-  <div class="form-group">
-    <label for="beerDescription">Description</label>
-  </div>
+    <div class="form-group">
+        <label for="description">Description</label>
+        <textarea class="form-control" name="description" id="description" placeholder="Beer Desciption"rows="3" value="<?php if(isset($_POST['description'])) echo $_POST['description']; ?>" ></textarea>
+    </div>
 
   <div class="form-row">
     <div class="form-group col-md-3">

@@ -1,7 +1,15 @@
-<?php include('../../asset/includes/headerCat.php') ?>
-<?php include('germany/description.php') ?>
+<?php include('../../asset/includes/headerCat.php'); ?>
+<?php include('germany/description.php');
+include('../../asset/datas/bdd/Connector.php');?>
 
-<?php $myBeers = array_map('str_getcsv', file('../../asset/datas/germany.csv'));?>
+<?php //$myBeers = array_map('str_getcsv', file('../../asset/datas/germany.csv'));
+
+$myConn = new Connector();
+$myBeers = $myConn->selectCat('germany');
+
+?>
+
+
 
   <?php include('../../asset/includes/topVenteCat.php') ?>
 
